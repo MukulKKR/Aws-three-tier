@@ -32,21 +32,3 @@ This project implements a **cloud-native three-tier architecture** on AWS with f
 ---
 
 ## 📂 Project Structure
-aws-three-tier-app/
-│── frontend/
-│   ├── index.html
-│   ├── style.css
-│   └── app.js
-│
-│── backend/
-│   ├── app.py
-│   ├── Dockerfile
-│   └── requirements.txt
-│
-│── lambda/
-│   └── function.py
-│
-│── infra/
-│   └── main.tf
-│
-│── README.md
