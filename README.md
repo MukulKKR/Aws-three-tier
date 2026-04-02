@@ -1,25 +1,32 @@
-☁️ AWS Three-Tier Cloud-Native Web Application
-📌 Project Overview
+# AWS Three-Tier Cloud-Native Application with DevOps Automation
 
-This project demonstrates a cloud-native three-tier architecture using a simple web application.
+## 📌 Overview
+This project implements a **cloud-native three-tier architecture** on AWS with full DevOps automation.
 
-It consists of:
+### Architecture:
+- **Presentation Tier**
+  - Amazon S3 (Frontend hosting)
+  - CloudFront (CDN)
+  - API Gateway
 
-Frontend (Presentation Layer) → HTML, CSS, JavaScript
-Backend (Application Layer) → Flask API
-Infrastructure (Conceptual AWS Layer) → Can be deployed using AWS services
-🏗️ Architecture
-User → Frontend → Backend API → Data / Services
-🔹 Presentation Tier
-Built using HTML, CSS, JavaScript
-Handles user interaction
-🔹 Application Tier
-Built using Flask (Python)
-Provides REST API endpoints
-🔹 Data Tier
-Simulated (can be extended to RDS/DynamoDB)
-⚙️ Features
-Interactive UI (Dashboard)
-API integration using JavaScript (fetch)
-Backend service simulation
-Cloud-ready architecture
+- **Business Logic Tier**
+  - AWS ECS (Docker containers)
+  - AWS Lambda (serverless functions)
+  - Application Load Balancer
+
+- **Data Tier**
+  - Amazon RDS (MySQL/Aurora)
+  - DynamoDB
+
+---
+
+## ⚙️ Tech Stack
+- AWS (ECS, Lambda, RDS, S3, CloudFront, API Gateway)
+- Docker
+- Terraform / CloudFormation (IaC)
+- CI/CD (CodePipeline, CodeBuild, CodeDeploy)
+- Monitoring (CloudWatch, X-Ray)
+
+---
+
+## 📂 Project Structure
